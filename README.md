@@ -26,8 +26,7 @@
 
 - busybox as base not working
 
-- mvn package
-- docker build -t my-stuff-backend:0.99.1 .
+- mvn package ; docker build -t my-stuff-backend:0.99.1 .
 - docker run --net quest-dockerfiles_mystuff-net -e SPRING_PROFILES_ACTIVE=docker -p 8080:8080 my-stuff-backend:0.99.1
 ```sh
 Exception in thread "main" java.lang.UnsupportedClassVersionError: de/telekom/sea/mystuffbackend/MyStuffBackendApplication has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
