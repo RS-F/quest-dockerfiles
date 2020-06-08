@@ -8,8 +8,7 @@
 - docker image ls
 - docker ps
 - docker network ls
-
-
+ 
 - docker compose down
 - docker volume prune
 
@@ -26,8 +25,7 @@
 ### Learnings (not working :-( )
 
 - busybox as base not working
-
-
+ 
 - docker-compose up
 - mvn package
 - docker build -t my-stuff-backend:0.99.1 .
