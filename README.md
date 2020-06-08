@@ -26,7 +26,6 @@
 
 - busybox as base not working
 
-- docker-compose up
 - mvn package
 - docker build -t my-stuff-backend:0.99.1 .
 - docker run --net quest-dockerfiles_mystuff-net -e SPRING_PROFILES_ACTIVE=docker -p 8080:8080 my-stuff-backend:0.99.1
@@ -37,6 +36,7 @@ Exception in thread "main" java.lang.UnsupportedClassVersionError: de/telekom/se
 
 - docker network ls
 - docker run --net quest-dockerfiles_mystuff-net -p 8080:8080 sea/my-stuff-backend:0.99.2
+(profile missing)
 ```sh
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 ```
