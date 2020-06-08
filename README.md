@@ -8,7 +8,7 @@
 - docker image ls
 - docker ps
 - docker network ls
-
+- docker run --net quest-dockerfiles_mystuff-net -e SPRING_PROFILES_ACTIVE=docker -p 8080:8080 sea/my-stuff-backend:0.99.2
 - docker compose down
 - docker volume prune
 
