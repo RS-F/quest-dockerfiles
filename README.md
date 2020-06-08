@@ -2,10 +2,12 @@
 
 **Commands used**
 
+- docker-compose up
 - ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=sea/my-stuff-backend:0.99.2
 - find . -name \*\.jar -print
 - docker image ls
-- docker-compose up
+- docker ps
+- docker network ls
 
 - docker compose down
 - docker volume prune
@@ -23,6 +25,8 @@
 ### Learnings (not working :-( )
 
 - busybox as base not working
+
+- docker-compose up
 - mvn package
 - docker build -t my-stuff-backend:0.99.1 .
 ```sh
