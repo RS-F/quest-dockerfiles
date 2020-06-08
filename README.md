@@ -2,11 +2,13 @@
 
 **Commands used**
 
-- ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=sea/my-stuff-backend:0.99
+- ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=sea/my-stuff-backend:0.99.2
 - find . -name \*\.jar -print
-- docker build -t sea/my-stuff-backend:0.99 .
 - docker image ls
+- docker-compose up
 
+- docker compose down
+- docker volume prune
 
 ## git commands
 
@@ -21,8 +23,14 @@
 ### Learnings
 
 - busybox as base not working
-- mvnw package throws exception:
+- mvnw package
+- docker build -t my-stuff-backend:0.99.1 .
 ```sh
 Exception in thread "main" java.lang.UnsupportedClassVersionError: de/telekom/sea/mystuffbackend/MyStuffBackendApplication has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+```
+- docker network ls
+- docker run --net quest-dockerfiles_mystuff-net -p 8080:8080 sea/my-stuff-backend:0.99.2
+```sh
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 ```
 

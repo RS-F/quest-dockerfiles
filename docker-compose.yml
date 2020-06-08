@@ -31,7 +31,7 @@ services:
     depends_on:
       - mysql
   backend:
-    image: sea/my-stuff-backend:0.99.2
+    image: my-stuff-backend:0.99.1
     ports:
       - 8080:8080
     environment:
